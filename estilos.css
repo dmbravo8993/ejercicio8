@@ -1,0 +1,189 @@
+body{
+	margin: 0px;
+	font-family: 'Lato', sans-serif;
+}
+.main-header{
+
+}
+.logo{
+	background-color: #32618D;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.social{	
+	font-size: 28px;
+	position:absolute;
+	top:40px;
+	right: 30px;
+}
+.social a{
+	color:#8D9EBE;
+	text-decoration: none;
+	margin-right: 8px;
+}
+.main-menu{
+	text-align: center;
+}
+.main-menu ul{
+	list-style: none;
+
+}
+.main-menu ul li{
+	display: inline-block;
+	margin: 5px 15px;
+}
+.main-menu ul li a{
+	color:#1E3B71;
+	font-weight: 700;
+	padding-left: 5PX;
+	padding-right: 5PX;
+	padding-bottom: 5px;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+
+}
+.main-menu ul li a:hover{
+	color:#8DABC2;
+	border-bottom: 2px solid #8DABC2;
+}
+.slider img{
+	width: 100%;
+}
+.container{/*raper o envoltura es el padre de las card*/
+	margin: 0 auto;
+	max-width: 1170px;/*con el max predefinimos q este sea el tope maximo de ancho*/
+	overflow: hidden;
+	/*realizamos cambios para poder organizar las card en el espacio usando el flex*/
+	/*display: flex;
+	justify-content: space-between;*/
+}
+.oferta-academica .container{/*padre */
+	display: flex;
+	justify-content: space-around;
+}
+.title-section{	
+	font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.title-oferta-academica{/*DE ESTA FORMA SE DEFINE EL COLOR DEL TEXTO DE LOS TITULOS*/
+	color:#32618D;
+}
+.card{
+	border: 1px solid #D6D2D2;
+	border-radius: 5px;
+	/*float: left;*/
+	overflow: hidden;
+	/*margin-left: 3%;*/
+	width: 30%;	
+}
+
+.card-hero{
+	position: relative;
+}
+.card-hero img{
+	width: 100%;
+}
+.btn-card-show{
+	background-color: #FFB606;
+	display: none; 
+	color:white; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: -10px;
+	margin-right:-50px;
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	height: 20px;
+	width: 100px;
+}
+.btn-card-show:hover {
+	background-color: #0ea006;
+}
+.card-hero:hover .btn-card-show{
+	display: block;
+}
+.card-title{
+	text-align: center;
+}
+/*USAMOS UN SEUDOELEMENTO: para la linea verde va añadido a una de las etiqueta puede aparecer antes o despues del contenido de la etoqueta*/
+.card-title::after {
+	content: '';
+	background-color:#1CA311;
+	display: block;
+	height: 1px;
+	margin: 0 auto; /*para centrar la linea*/
+	margin-top: 3px;
+	width: 70%;
+}
+/*------------------*/
+.card-list{
+border-color: #999999;
+list-style: none;
+text-align: center;
+padding-left: 0;
+}
+.contact{/*padre*/
+
+}
+.contact .container{
+	display: flex;
+	justify-content: space-around;
+}
+
+.title-contact{
+	background-color: #8DABC2;
+	color:white;
+}
+.img-contact{
+	margin: 0;
+}
+.img-contact img{
+	width: 100%;
+}
+.contact-form{
+	display: flex;
+	flex-direction: column;
+	/* arr iz dere abajo*/
+	padding: 0 20px 30px;
+	width: 50%;
+}
+.contact-form input[type="text"]{
+	display: block;
+
+}
+.form-control{
+	border:1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100%;
+	/*arr dere abaj iz*/
+	margin: 7px 0;
+	padding: 10px 0;
+}
+.btn-contact{
+	background-color: #32618D;
+	border-radius: 5px;
+	color:white;
+	font-size: 15px;
+	padding-top: 10PX;
+	padding-bottom: 10PX;
+}
+
+.footer{
+	background-color: #32618D;
+	color:#FFB606 ;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align:center;
+	margin-top: 20px;
+}
+@media screen and (max-width: 768){
+	
+}
